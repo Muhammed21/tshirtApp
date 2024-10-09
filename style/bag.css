@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #F4ED36;
+    --bg-section1: 133, 132, 189;
+    --bg-section2: 249, 204, 115;
+    --bg-section3: 201, 66, 69;
+    --bg-rect-back: 172, 79, 152;
+    --color-section3: 248, 193, 186;
+    --bg-blue-dark: 97, 96, 154;
+    --bg-red-card: 193 72 72;
+    --bg-footer: 57, 80, 40;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(var(--bg-red-card));
+}
+
+.section1-bag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+}
+
+.header-bag {
+    margin-top: 60px;
+}
+
+.header-bag h1 {
+    font-family: 'Obviously';
+    max-width: 1300px;
+    text-wrap: wrap;
+    font-stretch :ultra-expanded;
+    color: rgb(var(--color-section3));
+    transform: scaleY(0.3);
+    font-weight: 900;
+    font-size: calc(12vw);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 14vw;
+    padding: 10px 10px 100px 10px;
+    text-align: center;
+}

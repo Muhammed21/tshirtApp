@@ -23,6 +23,12 @@ body {
 
 .menu-section {
     display: none;
+    animation: CloseMenu 0.4s ease-in-out ;
+}
+
+.active {
+    display: block;
+    animation: OpenMenu 0.4s ease-in-out ;
     padding: 19px;
     top: 0;
     left: 0;
@@ -63,8 +69,14 @@ body {
 }
 
 .menu1, .menu2, .menu3 {
+    transition: all 0.2s ease-in-out;
     position: relative;
     display: flex;
+}
+
+.menu1:hover, .menu2:hover, .menu3:hover {
+    transition: all 0.2s ease-in-out;
+    rotate: 2deg;
 }
 
 .menu1 p, .menu2 p, .menu3 p {
@@ -90,7 +102,7 @@ body {
 }
 
 .menu2 img {
-    top: -12px;
+    top: -5px;
 }
 
 /* BUTTON STYLE */
@@ -233,6 +245,26 @@ button {
     }
 }
 
+@keyframes OpenMenu {
+    from {
+        opacity: 0;
+        padding: 10px;
+    }
+    to {
+        opacity: 1;
+        padding: 19px;
+    }
+}
+
+@keyframes CloseMenu {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes dotted {
     0% {
         transform: translate(0px, 0px);
@@ -342,13 +374,6 @@ button {
     line-height: 16vw;
     padding: 10px 10px 100px 10px;
     text-align: center;
-}
-
-.header img {
-    position: absolute;
-    width: 900px;
-    left: 100px;
-    top: 360px;
 }
 
 .header h2 {
@@ -789,6 +814,9 @@ button {
         line-height: 70px;
         font-size: 90px;
     }
+    .img-article {
+        width: 150px;
+    }
     .articles p {
         font-weight: 700;
     }
@@ -808,6 +836,7 @@ button {
         height: 400px;
     }
     .subcard1 p, .subcard2 p, .subcard3 p {
+        line-height: 70px;
         font-weight: 700;
         width: 250px;
         font-size: 80px;
