@@ -675,18 +675,12 @@ button {
 
 @media (max-width: 700px) {
     .header h1{
-        font-weight: 700;
+        font-weight: 750;
         line-height: 70px;
         font-size: 90px;
     }
     .articles p {
-        font-weight: 700;
-    }
-    .header img {
-        width: 200px;
-        top: 160px;
-        left: 60px;
-        display: block;
+        font-weight: 750;
     }
     .section2 {
         padding: 10px 0 20px 0;
@@ -704,7 +698,7 @@ button {
         height: 400px;
     }
     .subcard p {
-        font-weight: 700;
+        font-weight: 750;
         width: 250px;
         font-size: 80px;
     }
@@ -715,7 +709,7 @@ button {
         width: 120px;
     }
     .section3 p {
-        font-weight: 700;
+        font-weight: 750;
         font-size: 80px;
         line-height: 65px;
     }
@@ -723,7 +717,7 @@ button {
         padding: 50px 0;
     }
     .top-footer p {
-        font-weight: 700;
+        font-weight: 750;
         line-height: 70px;
         font-size: 80px;
     }
