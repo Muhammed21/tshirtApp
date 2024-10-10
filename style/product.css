@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #f4ed36;
+  --bg-section1: 133, 132, 189;
+  --bg-section2: 249, 204, 115;
+  --bg-section3: 201, 66, 69;
+  --bg-rect-back: 172, 79, 152;
+  --color-section3: 248, 193, 186;
+  --bg-blue-dark: 97, 96, 154;
+  --bg-red-card: 193 72 72;
+  --bg-footer: 57, 80, 40;
+  --bg-select-option: 231, 138, 184;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(var(--bg-section1));
+}
+
+.section1-product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-product {
+  position: relative;
+  margin: 50px 0;
+}
+
+.header-product h1 {
+  font-family: "Obviously";
+  max-width: 600px;
+  margin-bottom: -50px;
+  width: min-content;
+  text-wrap: wrap;
+  font-stretch: ultra-expanded;
+  color: rgb(var(--color-section3));
+  transform: scaleY(0.8) scaleX(3);
+  font-weight: 900;
+  font-size: calc(13vw);
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  line-height: 11vw;
+  padding: 10px 10px 100px 10px;
+  text-align: center;
+}
+
+.header-product img {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 20vw;
+}
+
+/* MENU BOTTOM SELECT */
+
+.select-option {
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+  max-width: 42rem;
+  width: 100%;
+  background-color: rgb(var(--bg-select-option));
+}
+
+label {
+  font-family: DegularBold;
+  text-wrap: nowrap;
+  width: max-content;
+}
+
+.top-option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: max-content;
+  padding: 10px;
+}
+
+.option-select-1,
+.option-select-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="radio"] {
+  color: black;
+  border: 3px solid black;
+  border-radius: 50%;
+  background-color: rgb(249, 245, 242);
+  cursor: pointer;
+  content: "";
+  width: 23px;
+  aspect-ratio: 1/1;
+  margin: 0px;
+  display: grid;
+  place-content: center;
+  font: inherit;
+  appearance: none;
+}
+
+input[type="radio"]::before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 200ms ease-in-out;
+  background-color: black;
+}
+
+/* Style the radio button when checked */
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}
+
+.bottom-option {
+  cursor: pointer;
+  display: flex;
+  transition: all 100ms ease-in-out;
+  align-items: center;
+  justify-content: center;
+  border-top: 3px solid black;
+  width: 100%;
+  height: max-content;
+  padding: 0px 20px;
+  background-color: #f4ed36;
+}
+
+.bottom-option:hover {
+  border-top: 5px solid black;
+  transition: all 100ms ease-in-out;
+  margin-top: 1px;
+}
+
+.bottom-option p {
+  font-size: 40px;
+  font-family: Obviously;
+  text-transform: uppercase;
+  font-stretch: ultra-expanded;
+  transform: scaleX(1) scaleY(0.5);
+  font-weight: 900;
+}
