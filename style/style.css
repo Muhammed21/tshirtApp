@@ -316,6 +316,7 @@ button .span-mother2 span:nth-child(7) {
 .menu-header {
   z-index: 10;
   position: fixed;
+  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
