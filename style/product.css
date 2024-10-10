@@ -58,9 +58,9 @@ body {
 
 .header-product img {
   position: absolute;
-  top: 50px;
-  left: 0px;
-  width: 400px;
+  top: -350px;
+  left: -140px;
+  width: 700px;
 }
 
 /* MENU BOTTOM SELECT */
@@ -166,7 +166,7 @@ input[type="radio"]:checked::before {
   text-transform: uppercase;
   font-stretch: ultra-expanded;
   transform: scaleX(1) scaleY(0.5);
-  font-weight: 900;
+  font-weight: 700;
 }
 
 /* SECTION1 */
@@ -307,9 +307,9 @@ input[type="radio"]:checked::before {
 
 @media (max-width: 1200px) {
   .header-product img {
-    top: -10px;
-    width: 250px;
-    left: 50px;
+    top: -350px;
+    width: 450px;
+    left: -60px;
   }
   .top-menu-deroulant p {
     font-size: 30px;
@@ -329,6 +329,7 @@ input[type="radio"]:checked::before {
   .menu-deroulant-1 p,
   .menu-deroulant-2 p,
   .menu-deroulant-3 p {
+    line-height: 20px;
     font-size: 40px;
   }
   .children-part1 p {
@@ -343,8 +344,8 @@ input[type="radio"]:checked::before {
     line-height: 55px;
   }
   .header-product img {
-    top: -50px;
-    width: 200px;
-    left: 70px;
+    top: -350px;
+    width: 400px;
+    left: -40px;
   }
 }
