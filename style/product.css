@@ -33,7 +33,10 @@ body {
 
 .header-product {
   position: relative;
+  max-width: 42em;
+  width: 100%;
   margin: 50px 0;
+  padding: 0 20px;
 }
 
 .header-product h1 {
@@ -58,8 +61,8 @@ body {
 
 .header-product img {
   position: absolute;
-  top: -350px;
-  left: -140px;
+  top: -70px;
+  left: -50px;
   width: 700px;
 }
 
@@ -307,9 +310,9 @@ input[type="radio"]:checked::before {
 
 @media (max-width: 1200px) {
   .header-product img {
-    top: -350px;
+    top: -70px;
     width: 450px;
-    left: -60px;
+    left: 60px;
   }
   .top-menu-deroulant p {
     font-size: 30px;
@@ -344,8 +347,8 @@ input[type="radio"]:checked::before {
     line-height: 55px;
   }
   .header-product img {
-    top: -350px;
+    top: -200px;
     width: 400px;
-    left: -40px;
+    left: 60px;
   }
 }
